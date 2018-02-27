@@ -14,28 +14,37 @@ Member < Group < Team <<< Organisation
 A member is a single user
 
 A Member belongs to one Organisation
+
 Members can be assigned to groups
+
 Members can be assigned to teams
+
 Members can be in multiple groups/teams
 
 ### Groups
 Groups are collections of Members
+
 Groups can be assigned to teams
+
 Groups can have multiple teams
 
 ### Teams 
 Teams are collections of Groups and Members
+
 Teams can have leaders - selected from one of the members in the team or from within a group
+
 Teams can have multiple leaders
 
 ### Organisation
 The collection of all Members Groups and Teams.
-Created and maintained by Default
-Has Admins that can add Members
 
+Created and maintained by Default
+
+Has Admins that can add Members
 
 ### Leaders 
 Have more control than regular members
+
 @todo
 
 ## Tasks
@@ -50,6 +59,7 @@ A Task has:
 * Schedule (optional)
 
 Members can assign themselves to Tasks assigned to a Group or Team they are part of
+
 A Team leader can assign other members to tasks assigned to the Team
 
 ## Views
@@ -72,14 +82,18 @@ List can be filtered by:
 
 ### Teams/Groups Overview
 Displays Teams/Groups the Member belongs to
+
 Can create new Groups / Teams
 
 ### Team/Group view
 Can View Members/Groups
+
 Can view Tasks
 
 ### Task Creator
 Should be accessible from most other views
+
 Input boxes for all fields
+
 Should this be it's own view or just a pop-up from another view?
 
