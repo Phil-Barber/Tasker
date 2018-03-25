@@ -56,7 +56,7 @@ A Team leader can assign other members to tasks assigned to the Team
 ## Views
 The different pages a user will be able to view
 
-### Member view
+### Task Feed
 Displays lists of open tasks assigned to:
 * Member
 * Groups / Teams the member is part of
@@ -71,11 +71,12 @@ List can be filtered by:
 * Group / Team
 * Urgency
 
-### Teams/Groups Overview
+### Group Management
 Displays Teams/Groups the Member belongs to   
 Can create new Groups / Teams
+Can focus into a Team/Group to open a niew View:
 
-### Team/Group view
+#### Team/Group view
 Can View Members/Groups    
 Can view Tasks
 

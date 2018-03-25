@@ -1,10 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { connect } from 'react-redux';
-import Toolbar from './Toolbar';
-import TaskerStatusBar from './TaskerStatusBar';
 
-class Home extends React.Component {
+class TaskFeed extends React.Component {
   static navigationOptions = ({navigation}) => {
     return {
       headerLeft: (
@@ -20,14 +18,12 @@ class Home extends React.Component {
   render() {
     return (
       <View style={styles.app}>
-        <TaskerStatusBar />
-        <Toolbar />
         <View style={styles.container}>
           <Button 
             title="touch me baby"
             onPress={() => this.props.navigation.navigate('SecondScreen')}
           />
-          <Text>Working with redux!</Text>
+          <Text>This is where the Task feed will be</Text>
           <Text>Changes you make will automatically reload.</Text>
           <Text>Shake your phone to open the developer menu.</Text>
         </View>
@@ -54,4 +50,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(TaskFeed);

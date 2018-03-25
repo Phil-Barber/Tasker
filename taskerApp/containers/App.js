@@ -5,28 +5,38 @@ import {
  TabNavigator,
  TabBarBottom
 } from 'react-navigation';
-import Home from './Home';
+import TaskFeed from './TaskFeed';
+import GroupManager from './GroupManager';
 import SecondScreen from './SecondScreen';
 import ModalScreen from './ModalScreen';
 
-const MainStack = StackNavigator(
+const TaskFeedStack = StackNavigator(
   {
-    Home : { screen: Home },
+    TaskFeed : { screen: TaskFeed },
     SecondScreen : { screen: SecondScreen }
   },
   {
-    initialRouteName: 'Home',
-    headerBarTitle: 'hello'
+    initialRouteName: 'TaskFeed',
+  }
+);
+
+const GroupManagerStack = StackNavigator(
+  {
+    GroupManager : { screen: GroupManager },
+    SecondScreen : { screen: SecondScreen }
+  },
+  {
+    initialRouteName: 'GroupManager',
   }
 );
 
 const RootStack = TabNavigator(
   {
-    Main: {
-      screen: MainStack
+    TaskFeed : {
+      screen: TaskFeedStack
     },
-    MyModal: {
-      screen: ModalScreen
+    GroupFeed : {
+      screen: GroupManagerStack
     }
   },
   {
